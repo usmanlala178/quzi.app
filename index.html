@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, user-scalable=no">
+    <!-- For changing Address bar color For Chrome, firefox, opera & os -->
+    <meta name="theme-color" content="#0bacac">
+    <!-- For changing Address bar color For Windows Phone  -->
+    <meta name="msapplication-navbutton-color" content="#0bacac">
+    <!-- For changing Address bar color For Safari/IOS -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="#0bacac">
+    <title>Quizz App JS</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="created_name">
+        <p>Developed By Muhammad Usman</p>
+    </div>
+    <div class="container">
+        <h1>Quizz App JS</h1>
+        <div class="wrapper">
+            <div class="input-box">
+                <input id="username" type="text" required>
+                <label for="">Your Name</label>
+                <div class="underline"></div>
+                <p id="valid"></p>
+                <button class="start-btn">Start Quiz</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="quiz-container">
+        <p class="std_name"></p>
+        <div class="ques-no">
+            <p>Question no <span id="qs_no"></span> of <span id="total_qs"></span> </p>
+            <div class="time_box">
+                <li><span id="min">02 Mins</span></li>
+                <li><span id="sec">60 Sec</span></li>
+            </div>
+        </div>
+        <div class="question-box">
+            <h3 id="Ques"></h3>
+            <div class="q q1"></div>
+            <div class="q q2"></div>
+            <div class="q q3"></div>
+            <div class="q q4"></div>
+            <button class="next-btn">Next</button>
+        </div>
+    </div>
+
+    <div class="result_container">
+        <h3>Thank You!</h3>
+        <div class="result_sec">
+            <h4 id="remarks">Remarks!</h4>
+            <img id="emoji" src="sad.png" alt="">
+            <h6 class="std_name1"></h6>
+            <table>
+                <tr>
+                    <td>Total Questions</td>
+                    <td id="total_QS">0</td>
+                </tr>
+                <tr>
+                    <td>Attempted</td>
+                    <td id="attemd_qs">0</td>
+                </tr>
+                <tr>
+                    <td>Correct</td>
+                    <td id="right_ans">0</td>
+                </tr>
+                <tr>
+                    <td>Wrong</td>
+                    <td id="wrong_ans">0</td>
+                </tr>
+                <tr>
+                    <td>Percentage</td>
+                    <td id="percentage">NiLL</td>
+                </tr>
+            </table>
+            <div class="btn_sec">
+                <button class="try_again">Try Again!</button>
+                <a href="index.html"><button class="go_home">Go To Home</button></a>
+            </div>
+        </div>
+    </div>
+
+</body>
+<script src="script.js"></script>
+
+</html>
